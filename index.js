@@ -32,22 +32,6 @@ app.use(
   
 
 
-
-// const client = new pg.Client({
-//   user: "postgres",
-//   host: "localhost",
-//   database: "todolistProject",
-//   password: "Pilot@1502887#",
-//   port: 5432,
-// });
-
-console.log("DB_USER:", process.env.REACT_APP_DB_USER); 
-console.log("DB_PASSWORD:", process.env.REACT_APP_DB_HOST);
-console.log("DB_PASSWORD:", process.env.REACT_APP_DB_NAME);
-console.log("DB_PASSWORD:", process.env.REACT_APP_DB_PASSWORD);
-console.log("DB_PASSWORD:", process.env.REACT_APP_DB_PORT);
-
-
 const client = new pg.Client({
   user: process.env.REACT_APP_DB_USER,
   host: process.env.REACT_APP_DB_HOST,
